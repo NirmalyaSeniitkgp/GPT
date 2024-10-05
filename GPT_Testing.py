@@ -79,7 +79,7 @@ model = GPT(d_model,language_to_index,
 
 
 #This is for Model Loading
-model.load_state_dict(torch.load('/home/idrbt-06/Desktop/PY_TORCH/GPT/GPT_5_layers_300_epochs_batch_size_64_lr_0.0003.pth', map_location=torch.device(device)))
+model.load_state_dict(torch.load('/home/idrbt-06/Desktop/PY_TORCH/GPT/GPT_6_layers_100_epochs_batch_size_64_lr_0.0003.pth', map_location=torch.device(device)))
 model.eval()
 print(model)
 
