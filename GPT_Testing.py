@@ -44,8 +44,8 @@ data_tokenize = torch.tensor(encode(data),device='cpu')
 print(data_tokenize)
 print(len(data_tokenize))
 
-# Split the data into train data and validation data
-# First 90% will be train data and remaining 10% will be validation data
+# Separating validation data
+# Last 10% will be validation data
 n = int(0.9*len(data))
 validation_data_tokenize = data_tokenize[n::1]
 print('\n')
