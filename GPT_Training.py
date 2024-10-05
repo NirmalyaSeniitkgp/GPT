@@ -142,6 +142,9 @@ criterion = nn.CrossEntropyLoss()
 # Defining the Optimizer
 optimizer = torch.optim.Adam(params=model.parameters(), lr=learning_rate, betas=(0.9,0.98))
 
+# Starting of Training
+model.train()
+
 for epoch in range(num_epochs):
     for batch_number, (samples, labels) in enumerate(train_loader):
         print('This is batch_number = ', batch_number)
