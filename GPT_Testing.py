@@ -4,8 +4,8 @@ from torch.utils.data import Dataset, DataLoader
 from torch import Tensor
 import Positional_Encoding_Generation
 from Positional_Encoding_Generation import PositionalEncoding
-import GPT_Model_3
-from GPT_Model_3 import GPT
+import GPT_Model
+from GPT_Model import GPT
 
 device = 'cpu'
 
